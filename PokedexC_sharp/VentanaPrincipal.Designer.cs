@@ -32,6 +32,7 @@
             this.izq = new System.Windows.Forms.Button();
             this.der = new System.Windows.Forms.Button();
             this.nombrePokemon = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,11 +73,22 @@
             this.nombrePokemon.Size = new System.Drawing.Size(118, 39);
             this.nombrePokemon.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(539, 133);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 43);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.nombrePokemon);
             this.Controls.Add(this.der);
             this.Controls.Add(this.izq);
@@ -94,6 +106,7 @@
         private System.Windows.Forms.Button izq;
         private System.Windows.Forms.Button der;
         private System.Windows.Forms.Label nombrePokemon;
+        private System.Windows.Forms.Button button1;
     }
 }
 

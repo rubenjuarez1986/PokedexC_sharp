@@ -47,5 +47,12 @@ namespace PokedexC_sharp
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ventana2 v = new Ventana2();
+            v.cambiaNombrePokemon("Bulbasaur");
+            v.Show();
+        }
     }
 }
