@@ -33,23 +33,21 @@
             this.der = new System.Windows.Forms.Button();
             this.nombrePokemon = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 34);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 180);
+            this.pictureBox1.Size = new System.Drawing.Size(258, 212);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // izq
             // 
             this.izq.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.izq.Location = new System.Drawing.Point(33, 220);
+            this.izq.Location = new System.Drawing.Point(73, 265);
             this.izq.Name = "izq";
             this.izq.Size = new System.Drawing.Size(53, 44);
             this.izq.TabIndex = 1;
@@ -60,7 +58,7 @@
             // der
             // 
             this.der.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.der.Location = new System.Drawing.Point(116, 220);
+            this.der.Location = new System.Drawing.Point(152, 265);
             this.der.Name = "der";
             this.der.Size = new System.Drawing.Size(53, 44);
             this.der.TabIndex = 2;
@@ -70,37 +68,29 @@
             // 
             // nombrePokemon
             // 
-            this.nombrePokemon.Location = new System.Drawing.Point(30, 288);
+            this.nombrePokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombrePokemon.Location = new System.Drawing.Point(325, 34);
             this.nombrePokemon.Name = "nombrePokemon";
             this.nombrePokemon.Size = new System.Drawing.Size(154, 39);
             this.nombrePokemon.TabIndex = 3;
+            this.nombrePokemon.Click += new System.EventHandler(this.nombrePokemon_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(427, 383);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(34, 405);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 43);
+            this.button1.Size = new System.Drawing.Size(245, 59);
             this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
+            this.button1.Text = "Selecciona Pokemon";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(208, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(538, 338);
-            this.dataGridView1.TabIndex = 5;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1070, 490);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.nombrePokemon);
             this.Controls.Add(this.der);
@@ -108,8 +98,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "VentanaPrincipal";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.VentanaPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,7 +111,6 @@
         private System.Windows.Forms.Button der;
         private System.Windows.Forms.Label nombrePokemon;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

@@ -10,16 +10,33 @@ using System.Windows.Forms;
 
 namespace PokedexC_sharp
 {
-    public partial class Ventana2 : Form
+    public partial class VentanaSelecccionPokemon : Form
     {
-        public Ventana2()
+
+        public int idSeleccionado;
+
+        Conexion miConexion = new Conexion();
+        DataTable misPokemons = new DataTable();
+
+        public VentanaSelecccionPokemon()
         {
             InitializeComponent();
-           
+
+            dataGridView2.DataSource = miConexion.getTodosPokemons();
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            dataGridView2.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
         }
-        public void cambiaNombrePokemon(String nombrePokemon)
+
+        private void dataGridView2_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            label1.Text = nombrePokemon;
+            idSeleccionado = Convert.ToInt32(dataGridView2.Rows[e.RowIndex].Cells["id"].Value.ToString());
+            this.Close();
+
+
         }
     }
 }
+
+
+
+

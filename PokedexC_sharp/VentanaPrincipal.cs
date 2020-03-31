@@ -20,9 +20,7 @@ namespace PokedexC_sharp
         public VentanaPrincipal()
         {
             InitializeComponent();
-            dataGridView1.DataSource = miConexion.getTodosPokemons();
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+         
         }
 
         private Image convierteBlobAImagen(byte[] img)
@@ -53,25 +51,46 @@ namespace PokedexC_sharp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Ventana2 v = new Ventana2();
-            v.cambiaNombrePokemon("Bulbasaur");
-            v.Show();
+           // VentanaSelecccionPokemon v = new VentanaSelecccionPokemon();
+            //v.cambiaNombrePokemon("Bulbasaur");
+            //v.Show();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            nombrePokemon.Text = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
-            pictureBox1.Image = convierteBlobAImagen((byte[])dataGridView1.Rows[e.RowIndex].Cells["imagen"].Value);
+            //nombrePokemon.Text = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
+            //pictureBox1.Image = convierteBlobAImagen((byte[])dataGridView1.Rows[e.RowIndex].Cells["imagen"].Value);
            
 
         }
 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            String nombre = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
-            String id = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
+           // String nombre = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
+            //String id = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
 
-            MessageBox.Show(miConexion.actualizaPokemon(id, nombre));
+           // MessageBox.Show(miConexion.actualizaPokemon(id, nombre));
+        }
+
+        private void VentanaPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nombrePokemon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            VentanaSelecccionPokemon eligePokemon = new VentanaSelecccionPokemon();
+            eligePokemon.ShowDialog();
+            idActual = eligePokemon.idSeleccionado;
+            // MessageBox.Show(eligePokemon.idSeleccionado.ToString());
+            misPokemons = miConexion.getPokemonPorId(eligePokemon.idSeleccionado);
+            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
     }
 }
