@@ -35,8 +35,8 @@ namespace PokedexC_sharp
             idActual--;
             if(idActual <= 0) { idActual = 1; }
             misPokemons = miConexion.getPokemonPorId(idActual);
-            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
-            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+            infoPokemon();
+          
         }
 
         private void der_Click(object sender, EventArgs e)
@@ -45,8 +45,8 @@ namespace PokedexC_sharp
             idActual++;
             if (idActual >= 151) { idActual = 151; }
             misPokemons = miConexion.getPokemonPorId(idActual);
-            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
-            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+            infoPokemon();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -87,10 +87,34 @@ namespace PokedexC_sharp
             VentanaSelecccionPokemon eligePokemon = new VentanaSelecccionPokemon();
             eligePokemon.ShowDialog();
             idActual = eligePokemon.idSeleccionado;
-            MessageBox.Show(eligePokemon.idSeleccionado.ToString());
-           // misPokemons = miConexion.getPokemonPorId(eligePokemon.idSeleccionado);
-            //nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
-            //pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+           //MessageBox.Show(eligePokemon.idSeleccionado.ToString());
+            misPokemons = miConexion.getPokemonPorId(idActual);
+            infoPokemon();
+           
+           
+        }
+
+        //Metodo que muestra toda la informacion de los pokemons
+        public void infoPokemon()
+        {
+            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            areaPokemon.Text = misPokemons.Rows[0]["habitat"].ToString();
+            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+            idPokemon.Text = misPokemons.Rows[0]["id"].ToString();
+            descripcion.Text = misPokemons.Rows[0]["descripcion"].ToString();
+            ataquePokemon1.Text = misPokemons.Rows[0]["movimiento1"].ToString();
+            ataquePokemon2.Text = misPokemons.Rows[0]["movimiento2"].ToString();
+            AtaquePokemon3.Text = misPokemons.Rows[0]["movimiento3"].ToString();
+            AtaquePokemon4.Text = misPokemons.Rows[0]["movimiento4"].ToString();
+            tipoPokemon1.Text = misPokemons.Rows[0]["tipo1"].ToString();
+            tipoPokemon2.Text = misPokemons.Rows[0]["tipo2"].ToString();
+            especiePokemon.Text = misPokemons.Rows[0]["especie"].ToString();
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

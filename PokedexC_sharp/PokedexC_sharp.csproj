@@ -69,6 +69,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Ventana2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,14 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Ventana2.resx">
       <DependentUpon>Ventana2.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pokemon2020_conImagenesBLOB.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokedex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokedex1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
