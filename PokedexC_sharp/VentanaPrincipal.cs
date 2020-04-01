@@ -87,10 +87,10 @@ namespace PokedexC_sharp
             VentanaSelecccionPokemon eligePokemon = new VentanaSelecccionPokemon();
             eligePokemon.ShowDialog();
             idActual = eligePokemon.idSeleccionado;
-            // MessageBox.Show(eligePokemon.idSeleccionado.ToString());
-            misPokemons = miConexion.getPokemonPorId(eligePokemon.idSeleccionado);
-            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
-            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+            MessageBox.Show(eligePokemon.idSeleccionado.ToString());
+           // misPokemons = miConexion.getPokemonPorId(eligePokemon.idSeleccionado);
+            //nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            //pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
     }
 }
