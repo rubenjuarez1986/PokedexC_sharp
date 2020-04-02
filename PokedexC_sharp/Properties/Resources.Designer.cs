@@ -115,5 +115,15 @@ namespace PokedexC_sharp.Properties {
                 return ResourceManager.GetString("pokemon2020_conImagenesBLOB", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pokemons {
+            get {
+                object obj = ResourceManager.GetObject("pokemons", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -88,7 +88,7 @@ namespace PokedexC_sharp
             eligePokemon.ShowDialog();
             idActual = eligePokemon.idSeleccionado;
            //MessageBox.Show(eligePokemon.idSeleccionado.ToString());
-            misPokemons = miConexion.getPokemonPorId(idActual);
+            misPokemons = miConexion.getPokemonPorId(eligePokemon.idSeleccionado);
             infoPokemon();
            
            
@@ -114,6 +114,13 @@ namespace PokedexC_sharp
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ventanaPokemon ventana = new ventanaPokemon();
+            ventana.Show();
 
         }
     }

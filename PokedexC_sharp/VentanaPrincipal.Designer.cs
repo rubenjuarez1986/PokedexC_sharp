@@ -44,6 +44,7 @@
             this.idPokemon = new System.Windows.Forms.Label();
             this.tipoPokemon2 = new System.Windows.Forms.Label();
             this.areaPokemon = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -91,9 +92,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(528, 327);
+            this.button1.Location = new System.Drawing.Point(517, 319);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 33);
+            this.button1.Size = new System.Drawing.Size(102, 51);
             this.button1.TabIndex = 4;
             this.button1.Text = "Selecciona Pokemon";
             this.button1.UseVisualStyleBackColor = true;
@@ -189,11 +190,23 @@
             this.areaPokemon.Size = new System.Drawing.Size(98, 33);
             this.areaPokemon.TabIndex = 15;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(530, 69);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(129, 43);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "POKEMONS";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 599);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.areaPokemon);
             this.Controls.Add(this.tipoPokemon2);
             this.Controls.Add(this.idPokemon);
@@ -239,6 +252,7 @@
         private System.Windows.Forms.Label idPokemon;
         private System.Windows.Forms.Label tipoPokemon2;
         private System.Windows.Forms.Label areaPokemon;
+        private System.Windows.Forms.Button button2;
     }
 }
 
