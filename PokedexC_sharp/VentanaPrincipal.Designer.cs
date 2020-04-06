@@ -45,6 +45,7 @@
             this.tipoPokemon2 = new System.Windows.Forms.Label();
             this.areaPokemon = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.buscador = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -82,10 +83,12 @@
             // 
             // nombrePokemon
             // 
+            this.nombrePokemon.BackColor = System.Drawing.SystemColors.ControlText;
             this.nombrePokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombrePokemon.Location = new System.Drawing.Point(108, 327);
+            this.nombrePokemon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.nombrePokemon.Location = new System.Drawing.Point(96, 327);
             this.nombrePokemon.Name = "nombrePokemon";
-            this.nombrePokemon.Size = new System.Drawing.Size(98, 33);
+            this.nombrePokemon.Size = new System.Drawing.Size(110, 33);
             this.nombrePokemon.TabIndex = 3;
             this.nombrePokemon.Click += new System.EventHandler(this.nombrePokemon_Click);
             // 
@@ -112,7 +115,9 @@
             // 
             // tipoPokemon1
             // 
+            this.tipoPokemon1.BackColor = System.Drawing.SystemColors.ControlText;
             this.tipoPokemon1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipoPokemon1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.tipoPokemon1.Location = new System.Drawing.Point(409, 294);
             this.tipoPokemon1.Name = "tipoPokemon1";
             this.tipoPokemon1.Size = new System.Drawing.Size(89, 22);
@@ -120,6 +125,7 @@
             // 
             // ataquePokemon1
             // 
+            this.ataquePokemon1.BackColor = System.Drawing.SystemColors.Highlight;
             this.ataquePokemon1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ataquePokemon1.Location = new System.Drawing.Point(409, 233);
             this.ataquePokemon1.Name = "ataquePokemon1";
@@ -128,7 +134,9 @@
             // 
             // especiePokemon
             // 
+            this.especiePokemon.BackColor = System.Drawing.SystemColors.Desktop;
             this.especiePokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.especiePokemon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.especiePokemon.Location = new System.Drawing.Point(409, 338);
             this.especiePokemon.Name = "especiePokemon";
             this.especiePokemon.Size = new System.Drawing.Size(98, 22);
@@ -136,6 +144,7 @@
             // 
             // descripcion
             // 
+            this.descripcion.BackColor = System.Drawing.SystemColors.Highlight;
             this.descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descripcion.Location = new System.Drawing.Point(409, 153);
             this.descripcion.Name = "descripcion";
@@ -144,6 +153,7 @@
             // 
             // ataquePokemon2
             // 
+            this.ataquePokemon2.BackColor = System.Drawing.SystemColors.Highlight;
             this.ataquePokemon2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ataquePokemon2.Location = new System.Drawing.Point(513, 233);
             this.ataquePokemon2.Name = "ataquePokemon2";
@@ -152,6 +162,7 @@
             // 
             // AtaquePokemon3
             // 
+            this.AtaquePokemon3.BackColor = System.Drawing.SystemColors.Highlight;
             this.AtaquePokemon3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AtaquePokemon3.Location = new System.Drawing.Point(409, 257);
             this.AtaquePokemon3.Name = "AtaquePokemon3";
@@ -160,6 +171,7 @@
             // 
             // AtaquePokemon4
             // 
+            this.AtaquePokemon4.BackColor = System.Drawing.SystemColors.Highlight;
             this.AtaquePokemon4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AtaquePokemon4.Location = new System.Drawing.Point(513, 257);
             this.AtaquePokemon4.Name = "AtaquePokemon4";
@@ -168,6 +180,7 @@
             // 
             // idPokemon
             // 
+            this.idPokemon.BackColor = System.Drawing.SystemColors.Highlight;
             this.idPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idPokemon.Location = new System.Drawing.Point(196, 257);
             this.idPokemon.Name = "idPokemon";
@@ -176,7 +189,9 @@
             // 
             // tipoPokemon2
             // 
+            this.tipoPokemon2.BackColor = System.Drawing.SystemColors.ControlText;
             this.tipoPokemon2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipoPokemon2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.tipoPokemon2.Location = new System.Drawing.Point(504, 294);
             this.tipoPokemon2.Name = "tipoPokemon2";
             this.tipoPokemon2.Size = new System.Drawing.Size(92, 22);
@@ -184,6 +199,7 @@
             // 
             // areaPokemon
             // 
+            this.areaPokemon.BackColor = System.Drawing.SystemColors.Highlight;
             this.areaPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.areaPokemon.Location = new System.Drawing.Point(92, 257);
             this.areaPokemon.Name = "areaPokemon";
@@ -201,11 +217,23 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // buscador
+            // 
+            this.buscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscador.Location = new System.Drawing.Point(229, 93);
+            this.buscador.Name = "buscador";
+            this.buscador.Size = new System.Drawing.Size(97, 51);
+            this.buscador.TabIndex = 17;
+            this.buscador.Text = "buscador";
+            this.buscador.UseVisualStyleBackColor = true;
+            this.buscador.Click += new System.EventHandler(this.buscador_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 599);
+            this.Controls.Add(this.buscador);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.areaPokemon);
             this.Controls.Add(this.tipoPokemon2);
@@ -253,6 +281,7 @@
         private System.Windows.Forms.Label tipoPokemon2;
         private System.Windows.Forms.Label areaPokemon;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buscador;
     }
 }
 
