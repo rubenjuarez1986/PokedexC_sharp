@@ -63,6 +63,16 @@ namespace PokedexC_sharp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lupa__1_ {
+            get {
+                object obj = ResourceManager.GetObject("lupa (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pokedex {
             get {
                 object obj = ResourceManager.GetObject("Pokedex", resourceCulture);
@@ -122,6 +132,16 @@ namespace PokedexC_sharp.Properties {
         internal static System.Drawing.Bitmap pokemons {
             get {
                 object obj = ResourceManager.GetObject("pokemons", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pokemons2 {
+            get {
+                object obj = ResourceManager.GetObject("pokemons2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

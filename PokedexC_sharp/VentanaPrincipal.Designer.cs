@@ -95,7 +95,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(517, 319);
+            this.button1.Location = new System.Drawing.Point(567, 319);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 51);
             this.button1.TabIndex = 4;
@@ -137,14 +137,14 @@
             this.especiePokemon.BackColor = System.Drawing.SystemColors.Desktop;
             this.especiePokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.especiePokemon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.especiePokemon.Location = new System.Drawing.Point(409, 338);
+            this.especiePokemon.Location = new System.Drawing.Point(409, 327);
             this.especiePokemon.Name = "especiePokemon";
-            this.especiePokemon.Size = new System.Drawing.Size(98, 22);
+            this.especiePokemon.Size = new System.Drawing.Size(162, 33);
             this.especiePokemon.TabIndex = 8;
             // 
             // descripcion
             // 
-            this.descripcion.BackColor = System.Drawing.SystemColors.Highlight;
+            this.descripcion.BackColor = System.Drawing.Color.Lime;
             this.descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descripcion.Location = new System.Drawing.Point(409, 153);
             this.descripcion.Name = "descripcion";
@@ -184,7 +184,7 @@
             this.idPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idPokemon.Location = new System.Drawing.Point(196, 257);
             this.idPokemon.Name = "idPokemon";
-            this.idPokemon.Size = new System.Drawing.Size(56, 33);
+            this.idPokemon.Size = new System.Drawing.Size(84, 33);
             this.idPokemon.TabIndex = 13;
             // 
             // tipoPokemon2
@@ -220,11 +220,11 @@
             // buscador
             // 
             this.buscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buscador.Location = new System.Drawing.Point(229, 93);
+            this.buscador.Image = global::PokedexC_sharp.Properties.Resources.lupa__1_;
+            this.buscador.Location = new System.Drawing.Point(257, 93);
             this.buscador.Name = "buscador";
-            this.buscador.Size = new System.Drawing.Size(97, 51);
+            this.buscador.Size = new System.Drawing.Size(69, 51);
             this.buscador.TabIndex = 17;
-            this.buscador.Text = "buscador";
             this.buscador.UseVisualStyleBackColor = true;
             this.buscador.Click += new System.EventHandler(this.buscador_Click);
             // 

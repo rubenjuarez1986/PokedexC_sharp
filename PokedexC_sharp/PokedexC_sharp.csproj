@@ -143,5 +143,11 @@
   <ItemGroup>
     <None Include="Resources\pokemons.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokemons2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
